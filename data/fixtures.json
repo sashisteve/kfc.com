@@ -1,0 +1,15 @@
+{
+  "fixtures": [
+    { "date": "Oct 1, 2025", "opponent": "Rivals United", "venue": "Home" },
+    { "date": "Oct 8, 2025", "opponent": "City FC", "venue": "Away" }
+  ],
+  "results": [
+    { "date": "Sep 18, 2025", "match": "Local FC 2:1 County Stars" },
+    { "date": "Sep 11, 2025", "match": "Local FC 0:0 Lake Warriors" }
+  ],
+  "table": [
+    { "pos": 1, "team": "Local FC", "pts": 12 },
+    { "pos": 2, "team": "City FC", "pts": 10 },
+    { "pos": 3, "team": "Rivals United", "pts": 9 }
+  ]
+}

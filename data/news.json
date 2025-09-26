@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "date": "Sep 25, 2025",
+      "title": "Local FC Signs New Striker",
+      "content": "We are proud to announce the signing of John Doe, a 20-year-old striker who has already made waves in the youth leagues."
+    },
+    {
+      "date": "Sep 18, 2025",
+      "title": "Victory Against County Stars",
+      "content": "Our team secured a 2:1 victory in a thrilling match, solidifying our place at the top of the league table."
+    },
+    {
+      "date": "Sep 10, 2025",
+      "title": "Training Facility Upgrades",
+      "content": "We have completed major renovations to our training grounds, giving our players the best environment to succeed."
+    }
+  ]
+}

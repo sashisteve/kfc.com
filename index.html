@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Local FC - Home</title>
+  <link rel='stylesheet' href='index.css'>
+  <script src='menu.js' defer></script>
+</head>
+<body>
+  <header>
+    <nav class='navbar'>
+      <a href='index.html' class='logo'>Local FC</a>
+      <button class='menu-toggle'>?</button>
+      <ul class='nav-links'>
+        <li><a href='index.html' class='active'>Home</a></li>
+        <li class='dropdown'>
+          <a href='about.html'>About ?</a>
+          <ul class='dropdown-content'>
+            <li><a href='players.html'>Players</a></li>
+            <li><a href='founders.html'>Founders</a></li>
+            <li><a href='sponsors.html'>Sponsors</a></li>
+          </ul>
+        </li>
+        <li><a href='fixtures.html'>Fixtures</a></li>
+        <li><a href='news.html'>News/Blog</a></li>
+        <li><a href='matchcenter.html'>Match Center</a></li>
+        <li><a href='getintouch.html'>Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Karibu Katika Karibaribi FC</h1>
+    <p>Our pride, our team, our community.</p>
+    <div class='slideshow-container'>
+      <div class='slide fade'><img src='assets/images/home-1.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-2.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-3.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-4.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-5.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-1.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-6.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-7.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-8.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-9.jpg' alt='Team 1'></div>
+      <div class='slide fade'><img src='assets/images/home-10.jpg' alt='Team 1'></div>
+       <div class="mySlides fade">
+      <img src="images/masai 1.jpeg" alt="Mount Kenya">
+      <div class="text">Meet our Maasai community, and share an experence with them</div>
+    </div>    
+  </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Karibaribi FC. All rights reserved.</p>
+  </footer>
+  <!-- Slideshow script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change slide every 4 seconds
+    }
+  </script>
+</body>
+</html>
