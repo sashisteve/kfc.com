@@ -1,43 +1,48 @@
-/* ------------------------------
-   Mobile Hamburger Menu
------------------------------- */
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector("nav");
+let slideIndex = 0;
+showSlides();
 
-if (menuToggle) {
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-dot", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-dot";
+
+  setTimeout(showSlides, 4000); // Change image every 4s
 }
 
-/* ------------------------------
-   Gallery Lightbox
------------------------------- */
-const galleryImages = document.querySelectorAll(".gallery img");
-const lightbox = document.createElement("div");
-lightbox.id = "lightbox";
-lightbox.innerHTML = `
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-`;
-document.body.appendChild(lightbox);
-
-const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.querySelector("#lightbox .close");
-
-galleryImages.forEach(img => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
+document.querySelectorAll('.gallery-img').forEach(img => {
+  img.addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'block';
+    document.getElementById('lightbox-img').src = img.src;
   });
 });
 
-closeBtn.addEventListener("click", () => {
-  lightbox.style.display = "none";
+document.querySelector('.close').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
 });
 
-lightbox.addEventListener("click", (e) => {
-  if (e.target !== lightboxImg) {
-    lightbox.style.display = "none";
-  }
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const category = btn.dataset.category;
+    document.querySelectorAll('.player-card').forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
 });

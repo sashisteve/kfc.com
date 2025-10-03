@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
@@ -8,12 +8,27 @@
 </head>
 <body>
   <header>
-    <nav>n  <a href='index.html' class=''>Home</a>n  <a href='about.html' class=''>About</a>n  <a href='players.html' class=''>Players</a>n  <a href='founders.html' class=''>Founders</a>n  <a href='sponsors.html' class=''>Sponsors</a>n  <a href='fixtures.html' class=''>Fixtures</a>n  <a href='news.html' class=''>News</a>n  <a href='matchcenter.html' class=''>Match Center</a>n  <a href='contact.html' class='active'>Contact</a>n</nav>
-  </header>
+  <nav class='navbar'>
+    <a href='index.html' class='logo'>Karibaribi FC</a>
+    <button class='menu-toggle'>☰</button>
+    <ul class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='players.html'>Players</a></li>
+      <li><a href='founders.html'>Founders</a></li>
+      <li><a href='sponsors.html'>Sponsors</a></li>
+      <li><a href='fixtures.html'>Fixtures</a></li>
+      <li><a href='news.html'>News/Blog</a></li>
+      <li><a href='matchcenter.html'>Match Center</a></li>
+      <li><a href='shop.html'>Shop</a></li>
+      <li><a href='contact.html'class='active'>contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <h1>Get in touch</h1>
-    <p>Questions, sponsorship or fan club enquiries � we would love to hear from you.</p>
+    <p>Questions, sponsorship or fan club enquiries ï¿½ we would love to hear from you.</p>
 
     <section class='contact-grid'>
       <div class='contact-form'>
@@ -29,8 +44,8 @@
       <div class='contact-social'>
         <h2>Connect with us</h2>
         <p><strong>WhatsApp (Fan Group):</strong> <a href='https://chat.whatsapp.com/yourgroup' target='_blank' rel='noopener'><svg width='14' height='14' viewBox='0 0 24 24' style='vertical-align:middle;margin-right:6px'><path fill='#25D366' d='M...Z'/></svg>Join our WhatsApp</a></p>
-        <p><strong>Instagram:</strong> <a href='https://instagram.com/yourteam' target='_blank' rel='noopener'>@yourteam</a></p>
-        <p><strong>Facebook:</strong> <a href='https://facebook.com/yourteam' target='_blank' rel='noopener'>Karibaribi FC on Facebook</a></p>
+        <p><strong>Instagram:</strong> <a href='https://www.instagram.com/karibaribi.fc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' rel='noopener'>karibaribi.fc</a></p>
+        <p><strong>Facebook:</strong> <a href='https://www.facebook.com/p/Karibaribi-FC-100064117744112/' target='_blank' rel='noopener'>Karibaribi FC on Facebook</a></p>
         <p><strong>Email:</strong> <a href='mailto:contact@localfc.example'>contact@localfc.example</a></p>
       </div>
     </section>
@@ -44,3 +59,34 @@
 </html>
 
 
+
+<p><strong>leave a donation?</strong></p>
+<!-- ✅ Add this inside <body> at the right place -->
+<button id="payBtn">Donate</button>
+
+<script>
+document.getElementById("payBtn").addEventListener("click", async () => {
+  const phone = prompt("Enter your M-Pesa phone number (2547xxxxxxxx):");
+  const amount = prompt("Enter amount to pay:");
+
+  if (!phone || !amount) {
+    alert("Phone and amount required");
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:3000/stkpush", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone, amount }),
+    });
+
+    const data = await response.json();
+    console.log("STK Response:", data);
+    alert("STK Push initiated. Check your phone to complete payment.");
+  } catch (err) {
+    console.error(err);
+    alert("Payment request confirmed.");
+  }
+});
+</script>

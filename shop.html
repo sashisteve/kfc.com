@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Karibaribi FC - Shop</title>
+  <link rel='stylesheet' href='index.css'>
+  <script src='menu.js' defer></script>
+  <style>
+    .status-msg {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+<header>
+  <nav class='navbar'>
+    <a href='index.html' class='logo'>Karibaribi FC</a>
+    <button class='menu-toggle'>☰</button>
+    <ul class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='founders.html'>Founders</a></li>
+      <li><a href='fixtures.html'>Fixtures</a></li>
+      <li><a href='sponsors.html'>Sponsors</a></li>
+      <li><a href='news.html'>News/Blog</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='players.html'>Players</a></li>
+      <li><a href='matchcenter.html'>Match Center</a></li>
+      <li><a href='shop.html' class='active'>Shop</a></li>
+      <li><a href='contact.html'>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>🛒 Karibaribi FC Shop</h1>
+  <p>Official merchandise – Jerseys & Socks for all fans.</p>
+
+  <!-- Filter -->
+  <div class='filters'>
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('adult')">Adults</button>
+    <button onclick="filterItems('children')">Children</button>
+    <button onclick="filterItems('player')">Player Version</button>
+    <button onclick="filterItems('fan')">Fan Version</button>
+  </div>
+
+  <!-- Product Grid -->
+  <div class='product-grid'>
+    <!-- Adult Player Jersey -->
+    <div class='product adult player'>
+      <img src='assets/images/shop/shop-adult-player-jersey.jpg' alt='Adult Player Jersey'>
+      <h3>Adult Player Jersey</h3>
+      <p>Official match version jersey for adults.</p>
+      <p><strong>KES 2500</strong></p>
+      <button class="buyBtn" data-price="2500">Buy Now</button>
+      <div class="status-msg"></div>
+    </div>
+
+    <!-- Adult Fan Jersey -->
+    <div class='product adult fan'>
+      <img src='assets/images/shop/shop-adult-fan-jersey.jpg' alt='Adult Fan Jersey'>
+      <h3>Adult Fan Jersey</h3>
+      <p>Comfort fit jersey for everyday fans.</p>
+      <p><strong>KES 1800</strong></p>
+      <button class="buyBtn" data-price="1800">Buy Now</button>
+      <div class="status-msg"></div>
+    </div>
+
+    <!-- Children Player Jersey -->
+    <div class='product children player'>
+      <img src='assets/images/shop/shop-children-player-jersey.jpg' alt='Children Player Jersey'>
+      <h3>Children Player Jersey</h3>
+      <p>Official match version jersey for kids.</p>
+      <p><strong>KES 1500</strong></p>
+      <button class="buyBtn" data-price="1500">Buy Now</button>
+      <div class="status-msg"></div>
+    </div>
+
+    <!-- Children Fan Jersey -->
+    <div class='product children fan'>
+      <img src='assets/images/shop/shop-children-fan-jersey.jpg' alt='Children Fan Jersey'>
+      <h3>Children Fan Jersey</h3>
+      <p>Everyday jersey for junior fans.</p>
+      <p><strong>KES 1200</strong></p>
+      <button class="buyBtn" data-price="1200">Buy Now</button>
+      <div class="status-msg"></div>
+    </div>
+
+    <!-- Socks -->
+    <div class='product adult fan'>
+      <img src='assets/images/shop/shop-socks.jpg' alt='Team Socks'>
+      <h3>Team Socks</h3>
+      <p>Durable official team socks – one size fits all.</p>
+      <p><strong>KES 600</strong></p>
+      <button class="buyBtn" data-price="600">Buy Now</button>
+      <div class="status-msg"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Karibaribi FC. All rights reserved.</p>
+</footer>
+
+<script>
+function filterItems(category) {
+  let products = document.querySelectorAll('.product');
+  products.forEach(item => {
+    if (category === 'all') {
+      item.style.display = 'block';
+    } else {
+      item.style.display = item.classList.contains(category) ? 'block' : 'none';
+    }
+  });
+}
+
+// Attach STK Push to Buy buttons
+document.querySelectorAll(".buyBtn").forEach(button => {
+  button.addEventListener("click", async () => {
+    const price = button.getAttribute("data-price");
+    const parent = button.parentElement;
+    const statusMsg = parent.querySelector(".status-msg");
+
+    const phone = prompt("Enter your M-Pesa phone number (2547xxxxxxxx):");
+    if (!phone) {
+      statusMsg.textContent = "❌ Phone number is required.";
+      statusMsg.className = "status-msg error";
+      return;
+    }
+
+    try {
+      const response = await fetch("http://localhost:3000/stkpush", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone, amount: price }),
+      });
+
+      const data = await response.json();
+      console.log("STK Response:", data);
+
+      if (data.ResponseDescription) {
+        statusMsg.textContent = "✅ Payment initiated. Check your M-Pesa phone.";
+        statusMsg.className = "status-msg success";
+      } else {
+        statusMsg.textContent = "❌ Failed to initiate payment.";
+        statusMsg.className = "status-msg error";
+      }
+    } catch (err) {
+      console.error(err);
+      statusMsg.textContent = "✔️ Payment request confirmed.";
+      statusMsg.className = "status-msg error";
+    }
+  });
+});
+</script>
+</body>
+</html>

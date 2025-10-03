@@ -6,3 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     navLinks.classList.toggle('active');
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const currentLocation = location.pathname.split("/").pop();
+  const menuItems = document.querySelectorAll(".nav-links a");
+  menuItems.forEach(item => {
+    if(item.getAttribute("href") === currentLocation){
+      item.classList.add("active");
+    }
+  });
+});

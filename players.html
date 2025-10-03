@@ -1,58 +1,313 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Karibaribi FC - players</title>
-  <link rel='stylesheet' href='index.css'>
+  <title>Karibaribi FC - Players</title>
+  <link rel='stylesheet' href='players.css'>
   <script src='menu.js' defer></script>
+  <script src='players.js' defer></script>
 </head>
 <body>
   <header>
-    <nav class='navbar'>
-      <a href='index.html' class='logo'>Karibaribi FC</a>
-      <button class='menu-toggle'>?</button>
-      <ul class='nav-links'>
-        <li><a href='index.html'>Home</a></li>
-        <li class='dropdown'>
-          <a href='about.html'>About ?</a>
-          <ul class='dropdown-content'>
-            <li><a href='players.html'>Players</a></li>
-            <li><a href='founders.html'>Founders</a></li>
-            <li><a href='sponsors.html'>Sponsors</a></li>
-          </ul>
-        </li>
-        <li><a href='fixtures.html'>Fixtures</a></li>
-        <li><a href='news.html'>News/Blog</a></li>
-        <li><a href='matchcenter.html'>Match Center</a></li>
-        <li><a href='getintouch.html'>Get in Touch</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class='navbar'>
+    <a href='index.html' class='logo'>Karibaribi FC</a>
+    <button class='menu-toggle'>☰</button>
+    <ul class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='founders.html'>Founders</a></li>
+      <li><a href='fixtures.html'>Fixtures</a></li>
+      <li><a href='sponsors.html'>Sponsors</a></li>
+      <li><a href='news.html'>News/Blog</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='players.html' class='active'>Players</a></li>
+      <li><a href='matchcenter.html'>Match Center</a></li>
+      <li><a href='shop.html'>Shop</a></li>
+      <li><a href='contact.html'>contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
-    <h1>players Page</h1>
-    <p>Content for players goes here.</p>
+    <h1>Meet Our Players</h1>
+
+    <!-- Filter buttons -->
+    <div class='filter-buttons'>
+      <button data-filter='all'>All</button>
+      <button data-filter='men'>Men</button>
+      <button data-filter='under21'>Under 21</button>
+      <button data-filter='legends'>Legends</button>
+    </div>
+
+    <!-- Goalkeepers -->
+    <section class='player-section'>
+      <h2>Goalkeepers</h2>
+      <div class='player-grid'>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images//players/joseph titus 1.jpeg' alt='joseph titus'>
+          <h3>Joseph Titus</h3>
+          <p><strong>Age:</strong> 21</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Goalkeeper</p>
+          <p><strong>Appearances:</strong> 15</p>
+          <p><strong>Clean Sheets:</strong> 7</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/player-gk2.jpg' alt='Peter Junior'>
+          <h3>Peter Junior</h3>
+          <p><strong>Age:</strong> 28</p>
+          <p><strong>Nationality:</strong> Kenya/p>
+          <p><strong>Position:</strong> Goalkeeper</p>
+          <p><strong>Appearances:</strong> 12</p>
+          <p><strong>Clean Sheets:</strong> 5</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Defenders -->
+    <section class='player-section'>
+      <h2>Defenders</h2>
+      <div class='player-grid'>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Stephen Maina.jpeg' alt='6. Stephen Maina'>
+          <h3>Stephen Maina</h3>
+          <p><strong>Age:</strong> 25</p>
+          <p><strong>Nationality:</strong> Kenyan</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 100</p>
+          <p><strong>Goals:</strong> 5</p>
+        </div>
+        <div class='player-card' data-category='legends'>
+          <img src='assets/images/players/Franklin Kimotho.jpg' alt='Franklin Kimotho'>
+          <h3>Franklin Kimotho</h3>
+          <p><strong>Age:</strong> 38</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 350</p>
+          <p><strong>Goals:</strong> 20</p>
+        </div>
+        <div class='player-card' data-category='under21'>
+          <img src='assets/images/players/Clinton Wafula.jpg' alt='Clinton Wafula'>
+          <h3>Clinton Wafula</h3>
+          <p><strong>Age:</strong> 16</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 10</p>
+          <p><strong>Goals:</strong> 0</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images//players/Josphat Kalungu.jpeg' alt='Josphat Kalungu'>
+          <h3>Josphat Kalungu</h3>
+          <p><strong>Age:</strong> 19</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 150</p>
+          <p><strong>Goals:</strong> 8</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Dennis Namai.jpg' alt='Dennis Namai'>
+          <h3>Dennis Namai</h3>
+          <p><strong>Age:</strong> 25</p>
+          <p><strong>Nationality:</strong> Kenyan</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 100</p>
+          <p><strong>Goals:</strong> 5</p>
+        </div>
+        <div class='player-card' data-category='legends'>
+          <img src='assets/images/players/Jupiter Kirimi.jpeg' alt='Jupiter Kirimi'>
+          <h3>Jupiter Kirimi</h3>
+          <p><strong>Age:</strong> 38</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 350</p>
+          <p><strong>Goals:</strong> 20</p>
+        </div>
+        <div class='player-card' data-category='under21'>
+          <img src='assets/images/players/Mireti (2).jpeg' alt='Mireti'>
+          <h3>Mireti</h3>
+          <p><strong>Age:</strong> 16</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 10</p>
+          <p><strong>Goals:</strong> 0</p>
+        </div>
+        <div class='player-card' data-category='legends'>
+          <img src='assets/images/players/Benson Mutiso.jpeg' alt='Benson Mutiso'>
+          <h3>Benson Mutiso</h3>
+          <p><strong>Age:</strong> 27</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 150</p>
+          <p><strong>Goals:</strong> 8</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Nistel Kibet.jpeg' alt='Nistel Kibet'>
+          <h3>Nistel Kibet</h3>
+          <p><strong>Age:</strong> 27</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 150</p>
+          <p><strong>Goals:</strong> 8</p>
+        </div>
+        <div class='player-card' data-category='under21'>
+          <img src='assets/images/players/Eugine Maliachi.jpeg' alt='Eugine Maliachi'>
+          <h3>Eugine Maliachi</h3>
+          <p><strong>Age:</strong> 17</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 15</p>
+          <p><strong>Goals:</strong> 1</p>
+        </div>
+        <div class='player-card' data-category='under21'>
+          <img src='assets/images/players/players-1.jpg' alt='Josphat Kalungu'>
+          <h3>Josphat Kalungu</h3>
+          <p><strong>Age:</strong> 17</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 10</p>
+          <p><strong>Goals:</strong> 0</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/John Kariuki.jpeg' alt='John Kariuki'>
+          <h3>John Kariuki</h3>
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Defender</p>
+          <p><strong>Appearances:</strong> 25</p>
+          <p><strong>Goals:</strong> 2</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Midfielders -->
+    <section class='player-section'>
+      <h2>Midfielders</h2>
+      <div class='player-grid'>
+        <div class='player-card' data-category='legends'>
+          <img src='assets/images/players/Raphael Wanjaria.jpeg' alt='Raphael Wanjaria'>
+          <h3>Raphael Wanjaria</h3>
+          <p><strong>Age:</strong> 46</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Midfielder</p>
+          <p><strong>Appearances:</strong> 130</p>
+          <p><strong>Goals:</strong> 15</p>
+        </div>
+        <div class='player-card' data-category='under21'>
+          <img src='assets/images/players/Asman John.jpeg' alt='Asman John'>
+          <h3>Asman John</h3>
+          <p><strong>Age:</strong> 23</p>
+          <p><strong>Nationality:</strong> Kenyan</p>
+          <p><strong>Position:</strong> Midfielder</p>
+          <p><strong>Appearances:</strong> 35</p>
+          <p><strong>Goals:</strong> 10</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Augastine Wesa.jpeg' alt='Augastine Wesa'>
+          <h3>Augastine Wesa</h3>
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Midfielder</p>
+          <p><strong>Appearances:</strong> 18</p>
+          <p><strong>Goals:</strong> 3</p>
+        </div>
+                <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Felix Ouma.jpeg' alt='Felix Ouma'>
+          <h3>Felix Ouma</h3>
+          <p><strong>Age:</strong> 27</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Midfielder</p>
+          <p><strong>Appearances:</strong> 18</p>
+          <p><strong>Goals:</strong> 13</p>
+        </div>
+                <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Samuel Kambua.jpeg' alt='Samuel Kambua'>
+          <h3>Samuel Kambua</h3>
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Midfielder</p>
+          <p><strong>Appearances:</strong> 18</p>
+          <p><strong>Goals:</strong> 3</p>
+        </div>
+                <div class='player-card' data-category='men'>
+          <img src='assets/images/players/daryll wachira 1.jpeg' alt='daryll wachira'>
+          <h3>daryll wachira</h3>
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Midfielder</p>
+          <p><strong>Appearances:</strong> 18</p>
+          <p><strong>Goals:</strong> 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forwards -->
+    <section class='player-section'>
+      <h2>Forwards</h2>
+      <div class='player-grid'>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Ian Kiongera.jpeg' alt='Ian Kiongera'>
+          <h3>Ian Kiongera</h3>
+          <p><strong>Age:</strong> 24</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Forward</p>
+          <p><strong>Appearances:</strong> 90</p>
+          <p><strong>Goals:</strong> 12</p>
+        </div>
+                <div class='player-card' data-category='under21'>
+          <img src='assets/images/players/Joseph Mwanzia.jpeg' alt='Joseph Mwanzia'>
+          <h3>Joseph Mwanzia</h3>
+          <p><strong>Age:</strong> 16</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Forward</p>
+          <p><strong>Appearances:</strong> 9</p>
+          <p><strong>Goals:</strong> 4</p>
+        </div>
+                <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Emmanuel Wafula.jpg' alt='Emmanuel Wafula'>
+          <h3>Emmanuel Wafula</h3>
+          <p><strong>Age:</strong> 24</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Forward</p>
+          <p><strong>Appearances:</strong> 30</p>
+          <p><strong>Goals:</strong> 20</p>
+        </div>
+                <div class='player-card' data-category='legends'>
+          <img src='assets/images/players/Alex Wakahia.jpeg' alt='Alex Wakahia'>
+          <h3>Alex Wakahia</h3>
+          <p><strong>Age:</strong> 24</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Forward</p>
+          <p><strong>Appearances:</strong> 90</p>
+          <p><strong>Goals:</strong> 4</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/player-fwd2.jpg' alt='James Muli'>
+          <h3>James Muli</h3>
+          <p><strong>Age:</strong> 29</p>
+          <p><strong>Nationality:</strong> Kenyan</p>
+          <p><strong>Position:</strong> Forward</p>
+          <p><strong>Appearances:</strong> 14</p>
+          <p><strong>Goals:</strong> 6</p>
+        </div>
+        <div class='player-card' data-category='men'>
+          <img src='assets/images/players/Kelvin Njuguna.jpeg' alt='Kelvin Njuguna'>
+          <h3>Kelvin Njuguna</h3>
+          <p><strong>Age:</strong> 36</p>
+          <p><strong>Nationality:</strong> Kenya</p>
+          <p><strong>Position:</strong> Forward</p>
+          <p><strong>Appearances:</strong> 30</p>
+          <p><strong>Goals:</strong> 15</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Karibaribi FC. All rights reserved.</p>
   </footer>
-<script src='script.js'></script>
 </body>
 </html>
-<section class='gallery'>
-  <h2>Gallery</h2>
-  <div class='gallery-grid'>
-    <img src='assets/images/players-1.jpg' alt='players.html photo 1'>
-    <img src='assets/images/players-2.jpg' alt='players.html photo 2'>
-    <img src='assets/images/players-3.jpg' alt='players.html photo 3'>
-    <img src='assets/images/players-4.jpg' alt='players.html photo 4'>
-    <img src='assets/images/players-5.jpg' alt='players.html photo 5'>
-    <img src='assets/images/players-6.jpg' alt='players.html photo 6'>
-    <img src='assets/images/players-7.jpg' alt='players.html photo 7'>
-    <img src='assets/images/players-8.jpg' alt='players.html photo 8'>
-    <img src='assets/images/players-9.jpg' alt='players.html photo 9'>
-    <img src='assets/images/players-10.jpg' alt='players.html photo 10'>
-  </div>
-</section>
+
+
+
+
