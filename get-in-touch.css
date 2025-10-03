@@ -57,7 +57,11 @@ form button:hover {
 
 .social-links a:hover svg {
   fill: #005fa3;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 .social-links {
   margin-top: 30px;
   text-align: center;
@@ -78,4 +82,8 @@ form button:hover {
 .social-links a:hover svg {
   fill: #005fa3;
   transform: scale(1.1);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset some defaults */
 body {
   margin: 0;
@@ -32,6 +33,42 @@ nav a:hover {
   color: #003366;
 }
 
+=======
+/* Reset some defaults */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  color: #222;
+}
+
+header {
+  background-color: #003366; /* dark navy (football vibe) */
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: white;
+  color: #003366;
+}
+
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 nav {
   background-color: #00274d;
   display: flex;
@@ -61,4 +98,8 @@ nav a.active {
   background-color: #ffffff;
   color: #00274d;
   font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377

@@ -19,7 +19,11 @@ function showSlides() {
   dots[slideIndex-1].className += " active-dot";
 
   setTimeout(showSlides, 4000); // Change image every 4s
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 
 document.querySelectorAll('.gallery-img').forEach(img => {
   img.addEventListener('click', () => {
@@ -30,7 +34,11 @@ document.querySelectorAll('.gallery-img').forEach(img => {
 
 document.querySelector('.close').addEventListener('click', () => {
   document.getElementById('lightbox').style.display = 'none';
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -45,4 +53,8 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
       }
     });
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377

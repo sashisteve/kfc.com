@@ -90,7 +90,11 @@
   .dropdown-content {
     position: static;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Gallery Section */
 .gallery {
   display: flex;
@@ -111,7 +115,11 @@
 
 .gallery img:hover {
   transform: scale(1.05);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Lightbox overlay */
 #lightbox {
   display: none; 
@@ -147,7 +155,11 @@
 @keyframes zoomIn {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Lightbox Overlay */
 #lightbox {
   display: none; 
@@ -180,7 +192,11 @@
 @keyframes zoomIn {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* ? Gallery Grid */
 .gallery {
   margin: 2rem auto;
@@ -210,7 +226,11 @@
   transform: scale(1.1);
   z-index: 10;
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* ? Shop Page */
 .filters {
   margin: 20px;
@@ -261,9 +281,15 @@
 .product p {
   margin: 5px 0;
   color: #555;
+<<<<<<< HEAD
 }
 
 /* Slideshow Styles */
+=======
+}
+
+/* Slideshow Styles */
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -311,9 +337,15 @@
 
 .active-dot {
   background-color: #333;
+<<<<<<< HEAD
 }
 
 /* About Page Gallery Styles */
+=======
+}
+
+/* About Page Gallery Styles */
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Gallery Grid */
 .gallery-grid {
   display: grid;
@@ -363,9 +395,15 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+<<<<<<< HEAD
 }
 
 /* Players Page Styles */
+=======
+}
+
+/* Players Page Styles */
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Player Filters */
 .player-filters {
   text-align: center;
@@ -421,9 +459,17 @@
   padding: 4px 8px;
   border-radius: 5px;
   font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 .nav-links a.active {
   color: #ffcc00;
   font-weight: bold;
   border-bottom: 2px solid #ffcc00;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377

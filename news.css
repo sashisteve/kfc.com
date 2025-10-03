@@ -34,8 +34,13 @@ nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
+<<<<<<< HEAD
 }
 
+=======
+}
+
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 nav {
   background-color: #00274d;
   display: flex;
@@ -65,7 +70,11 @@ nav a.active {
   background-color: #ffffff;
   color: #00274d;
   font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 .gallery {
   padding: 20px;
   text-align: center;
@@ -87,7 +96,11 @@ nav a.active {
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Lightbox Overlay */
 #lightbox {
   display: none; 
@@ -120,4 +133,8 @@ nav a.active {
 @keyframes zoomIn {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377

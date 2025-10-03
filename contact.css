@@ -14,7 +14,11 @@ footer { background:#00274d; color:#fff; text-align:center; padding:12px; margin
 @media (max-width:768px) {
   .contact-grid { grid-template-columns: 1fr; }
   nav { flex-wrap:wrap; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
 /* Lightbox Overlay */
 #lightbox {
   display: none; 
@@ -47,4 +51,8 @@ footer { background:#00274d; color:#fff; text-align:center; padding:12px; margin
 @keyframes zoomIn {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377

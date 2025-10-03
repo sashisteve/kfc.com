@@ -17,4 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Please enter a valid email address.');
     }
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 64d8f4ece9a2cafb9055dfb50c53f9a7c4a24377
