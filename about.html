@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Karibaribi FC - About</title>
+  <link rel='stylesheet' href='index.css'>
+  <script src='menu.js' defer></script>
+  <style>
+    /* Slideshow styling */
+    .about-section {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 400px;
+      flex: 1;
+    }
+    .slideshow-container img {
+      width: 100%;
+      border-radius: 10px;
+      display: none;
+    }
+    .slideshow-container img.active {
+      display: block;
+    }
+
+    /* Staff bios */
+    .staff-section {
+      margin: 3rem 0;
+    }
+    .staff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .staff-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .staff-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <nav class='navbar'>
+    <a href='index.html' class='logo'>Karibaribi FC</a>
+    <button class='menu-toggle'>☰</button>
+    <ul class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='founders.html'>Founders</a></li>
+      <li><a href='sponsors.html'>Sponsors</a></li>
+      <li><a href='fixtures.html'>Fixtures</a></li>
+      <li><a href='shop.html'>Shop</a></li>
+      <li><a href='news.html'>News/Blog</a></li>
+      <li><a href='about.html' class='active'>About</a></li>
+      <li><a href='players.html'>Players</a></li>
+      <li><a href='matchcenter.html'>Match Center</a></li>
+      <li><a href='contact.html'>contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <!-- About + Slideshow -->
+    <section class="about-section">
+      <div class="about-text">
+        <h1>About Karibaribi FC</h1>
+        <p>Our history, our story, and our legacy.</p>
+        <p>Karibaribi Football Club, commonly referred to as Karibaribi FC or simply KFC,</p>
+        <p>is a professional football club based in Karibaribi, Thika, Kenya.</p>
+        <p>They compete in the Kenya County League, the good tier of Kenya football.</p>
+        <p><strong>Manager:</strong> Pius Muindi</p>
+        <p><strong>Founded:</strong> 1978</p>
+        <p><strong>Arena/Stadium:</strong> Karibaribi Grounds</p>
+        <p><strong>Leagues:</strong> County Premier League</p>
+        <p><strong>Training ground:</strong> Karibaribi Grounds</p>
+        <p><strong>Location:</strong> Karibaribi, off Thika-Mangu Road</p>
+        <p><strong>Mascot:</strong> </p>
+      </div>
+
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+        <img src="assets/images/players/joseph titus 1.jpeg" class="active" alt="Slide 1">
+        <img src="assets/images/players/Stephen Maina.jpeg" alt="Slide 2">
+        <img src="assets/images/players/Franklin Kimotho.jpg" alt="Slide 3">
+        <img src="assets/images/players/Josphat Kalungu.jpeg" alt="Slide 4">
+        <img src="assets/images/players/John Kariuki.jpeg" alt="Slide 4">
+        <img src="assets/images/players/Clinton Wafula.jpg" alt="Slide 4">
+        <img src="assets/images/players/Eugine Maliachi.jpeg" alt="Slide 4">
+        <img src="assets/images/players/Kelvin Njuguna.jpeg" alt="Slide 4">
+        <img src="assets/images/players/Ian Kiongera.jpeg" alt="Slide 4">
+        <img src="assets/images/players/felix kimotho.jpeg" alt="Slide 4">
+        <img src="assets/images/players/daryll wachira 1.jpeg" alt="Slide 4">
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class='gallery'>
+      <h2>Gallery</h2>
+      <div class='gallery-grid'>
+        <img src='assets/images/about/about-1.jpg' alt='about.html photo 1' class='gallery-img'>
+        <img src='assets/images/about/about-2.jpg' alt='about.html photo 2' class='gallery-img'>
+        <img src='assets/images/about/about-3.jpg' alt='about.html photo 3' class='gallery-img'>
+        <img src='assets/images/about/about-4.jpg' alt='about.html photo 4' class='gallery-img'>
+        <img src='assets/images/about/about-5.jpg' alt='about.html photo 5' class='gallery-img'>
+        <img src='assets/images/about/about-6.jpg' alt='about.html photo 6' class='gallery-img'>
+        <img src='assets/images/about/about-7.jpg' alt='about.html photo 7' class='gallery-img'>
+        <img src='assets/images/about/about-8.jpg' alt='about.html photo 8' class='gallery-img'>
+        <img src='assets/images/about/about-9.jpg' alt='about.html photo 9' class='gallery-img'>
+        <img src='assets/images/about/about-10.jpg' alt='about.html photo 10' class='gallery-img'>
+      </div>
+    </section>
+
+    <!-- Team Staff Bio -->
+    <section class="staff-section">
+      <h2>Our Team Staff</h2>
+      <div class="staff-grid">
+        <div class="staff-card">
+          <img src="assets/images/staff/manager.jpeg" alt="Manager">
+          <h3>Pius Muindi</h3>
+          <p>Head Manager since 2015, leading Karibaribi FC with passion and strategy.</p>
+        </div>
+        <div class="staff-card">
+          <img src="assets/images/staff/ass. manager.jpeg" alt="Assistant Coach">
+          <h3>Alex Wakahia</h3>
+          <p>Assistant Coach focusing on fitness and tactics.</p>
+        </div>
+        <div class="staff-card">
+          <img src="assets/images/staff/staff-3.jpg" alt="Physio">
+          <h3>application available</h3>
+          <p>Team physiotherapist ensuring players remain fit and ready.</p>
+        </div>
+        <div class="staff-card">
+          <img src="assets/images/staff/staff-4.jpg" alt="Goalkeeper Coach">
+          <h3>applivation available</h3>
+          <p>Specialist Goalkeeper Coach with 20+ years experience.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Karibaribi FC. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id='lightbox' class='lightbox'>
+    <span class='close'>&times;</span>
+    <img class='lightbox-content' id='lightbox-img'>
+  </div>
+
+  <script src='script.js'></script>
+  <script>
+    // Slideshow logic
+    let slides = document.querySelectorAll(".slideshow-container img");
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 3000);
+  </script>
+</body>
+</html>
+
